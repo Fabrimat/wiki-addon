@@ -20,7 +20,7 @@ jobs:
                   artifacts: "*.mcaddon"
                   bodyFile: "release.md"
                   token: ${{ secrets.GITHUB_TOKEN }}
-                  tag: "R-${{ github.run_number }}"
+                  tag: "Downloads"
                   name: "Downloads"
                   replacesArtifacts: true
             - name: Checkout
