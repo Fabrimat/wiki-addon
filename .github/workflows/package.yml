@@ -12,10 +12,12 @@ jobs:
         steps:
             - name: Checkout
               uses: actions/checkout@v2.1.1
-              env:
-                  ACTIONS_ALLOW_UNSECURE_COMMANDS: true
             - name: Bedrock Addon Packager
               uses: Fabrimat/addon-packager-action@v0.1
+            - name: Checkout
+              uses: actions/checkout@v2.1.1
+              env:
+                  ref: packages
             - name: Github commit and push
               uses: Smart-Transportation/push@v1.3
               with:
