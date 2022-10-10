@@ -20,7 +20,8 @@ jobs:
                   artifacts: "*.mcaddon"
                   bodyFile: "release.md"
                   token: ${{ secrets.GITHUB_TOKEN }}
-                  tag: ${{ github.job }}
+                  tag: ${{ job.container.id }}
+                  name: "Addons ${{ job.container.id }}"
             - name: Checkout
               uses: actions/checkout@v2.1.1
               with:
