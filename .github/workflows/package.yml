@@ -18,6 +18,7 @@ jobs:
               uses: actions/checkout@v2.1.1
               env:
                   ref: packages
+                  clean: false
             - name: Github commit and push
               uses: Smart-Transportation/push@v1.3
               with:
