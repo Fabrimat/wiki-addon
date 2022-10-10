@@ -25,3 +25,9 @@ jobs:
                 github_token: ${{ secrets.GITHUB_TOKEN }}
                 message: Publish addons
                 branch: packages
+            - name: Publish release
+              uses: ncipollo/release-action@v1
+              with:
+                  artifacts: "*.mcaddon"
+                  bodyFile: "release.md"
+                  token: ${{ secrets.GITHUB_TOKEN }}
