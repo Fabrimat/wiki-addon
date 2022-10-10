@@ -1,9 +1,0 @@
-{
-    "resource_pack_name": "Ghostly Guide",
-    "texture_name": "atlas.items",
-    "texture_data": {
-        "wiki.ectoplasm": {
-            "textures": "textures/items/ectoplasm"
-        }
-    }
-}
