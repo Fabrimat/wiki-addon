@@ -20,8 +20,8 @@ jobs:
                   ref: packages
                   clean: false
             - name: Github commit and push
-              uses: Smart-Transportation/push@v1.3
+              uses: ncipollo/release-action@v1
               with:
-                github_token: ${{ secrets.GITHUB_TOKEN }}
-                message: Publish addons
-                branch: packages
+                  artifacts: "*.mcaddon"
+                  bodyFile: "release.md"
+                  token: ${{ secrets.YOUR_GITHUB_TOKEN }}
