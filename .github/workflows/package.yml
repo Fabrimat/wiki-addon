@@ -23,6 +23,7 @@ jobs:
                   tag: "Downloads"
                   name: "Downloads"
                   replacesArtifacts: true
+                  allowUpdates: true
             - name: Checkout
               uses: actions/checkout@v2.1.1
               with:
