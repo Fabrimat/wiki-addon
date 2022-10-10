@@ -16,7 +16,7 @@ jobs:
               uses: Fabrimat/addon-packager-action@v0.1
             - name: Checkout
               uses: actions/checkout@v2.1.1
-              env:
+              with:
                   ref: packages
                   clean: false
             - name: Github commit and push
